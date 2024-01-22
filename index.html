@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Single-page developer portfolio</title>
+</head>
+<body>
+  <main class="container">
+    <img class="rings" src="assets/images/pattern-rings.svg" alt="rings">
+    <header class="hero-section">
+      <div class="greeting">
+        <p class="name">adamkeyes</p>
+        <div class="bio">
+          <h1 class="introduction"> Nice to meet you!<br/>I'm <u>Adam Keyes</u>.</h1>
+          <p class="description">Based in the UK, I'm a front-end developer<br/> passionate about 
+          building accessible web apps<br/> that users love.
+          </p>
+          <p class="contact-link"><u>Contact me</u></p>
+        </div>
+      </div>
+      <div class="portrait">
+        <div class="social-media-icons">
+          <img class='media-icons' src="./assets/images/icon-github.svg">
+          <img class='media-icons' src="assets/images/icon-frontend-mentor.svg">
+          <img class='media-icons' src="assets/images/icon-linkedin.svg">
+          <img class='media-icons' src="assets/images/icon-twitter.svg">
+        </div>
+        <img class="selfie" src="assets/images/image-profile-desktop.webp">
+      </div>
+    </header>
+    <section class="skill-sets">
+        <div class="skill">
+          <h2>HTML</h2>
+          <p>4 Years Experience</p>
+        </div>
+        <div class="skill">
+          <h2>CSS</h2>
+          <p>4 Years Experience</p>
+        </div>
+        <div class="skill">
+          <h2>JavaScript</h2>
+          <p>4 Years Experience</p>
+        </div>
+        <div class="skill">
+          <h2>Accessibility</h2>
+          <p>4 Years Experience</p>
+        </div >
+        <div class="skill">
+          <h2>React</h2>
+          <p>3 Years Experience</p>
+        </div> 
+        <div class="skill">
+          <h2>Sass</h2>
+          <p>3 Years Experience</p>
+        </div>
+    </section>
+    <img  class="rings-two" src="assets/images/pattern-rings.svg">
+    
+    <section class="projects">
+        <div  class="project-heading">
+          <h1>Projects</h1>
+          <p class="contact-link"><u>Contact me</u></p>
+        </div>
+        <div id="project" class="project">
+          <img   src="./assets/images/thumbnail-project-1-large.webp" alt="design portfoliio">
+          <h3>Design portfolio</h3>
+          <p>HTML CSS</p>
+        </div>
+        <div  id="project" class="project">
+          <img src="./assets/images/thumbnail-project-2-large.webp" alt="E-learn landing page">
+          <h3>E-learning landing page</h3>
+          <p>HTML CSS</p>
+        </div>
+        <div  id="project" class="project">
+          <img src="./assets/images/thumbnail-project-3-large.webp" alt="Todo web app">
+          <h3>Todo web app</h3>
+          <p>HTML CSS JavaScript</p>
+        </div>
+        <div  id="project" class="project">
+          <img src="./assets/images/thumbnail-project-4-large.webp" alt="Entertainment web app">
+          <h3>Entertainment web app</h3>
+          <p>HTML CSS JavaScript</p>
+        </div>
+        <div id="project" class="project">
+          <img src="./assets/images/thumbnail-project-5-large.webp" alt="Memory Game">
+          <h3>Memory Game</h3>
+          <p>HTML CSS JavaScript</p>
+        </div>
+        <div id="project" class="project">
+          <img src="./assets/images/thumbnail-project-6-large.webp" alt="Art gallery">
+          <h3>Art gallery showcase</h3>
+          <p> HTML CSS JavaScript</p>
+        </div>
+    </section>
+    <footer class="footer">
+      <img src="./assets/images/pattern-rings.svg" class="rings-three" alt="rings">
+      <div class="contact">
+        <div class="contact-info">
+          <h1 class="contact-title">Contact</h1>
+          <p class="contact-feedback">
+            I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.
+          </p>
+        </div>
+          <form id="feedback" class="feedback-form">
+            <input id="name" class="feedback-input user-name" type="text" name="name" placeholder="NAME">
+            <input id="email" class="feedback-input" type="text" name="email" placeholder="EMAIL">
+            <span id="error-message" class="error-message"></span>
+            <textarea id="message" class="feedback-input" type="text" name="message" placeholder="MESSAGE"></textarea>
+            <button id="send-message" class="send" type="submit"><u>SEND MESSAGE</u></button>
+          </form>
+      </div>
+      <div class="social">
+        <p class="name-two" >adamkeyes</p>
+        <div class="social-media-icons-two">
+          <div class='media-icons github'></div>
+          <div class='media-icons frontend'></div>
+          <div class='media-icons linkedIn'></div>
+          <div class='media-icons twitter'></div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
