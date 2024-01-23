@@ -49,15 +49,14 @@ body {
 .bio {
   margin-top: 7.92rem;
   width: 44.12rem;
-  height: 18.93rem;
 }
 
 .introduction {
   font-size: 5.5rem;
   font-weight: 700;
-  /* margin: 0; */
   line-height: 5.5rem;
   letter-spacing: -0.156rem;
+  margin: 0;
 }
 
 .introduction u {
@@ -131,9 +130,9 @@ body {
 
 .skill-sets {
   display: grid;
-  grid-template-columns: repeat(3, 23.16rem);
+  grid-template-columns: repeat(3, 21.5625rem);
   grid-template-rows: repeat(2, 6.12rem);
-  grid-row-gap: 3.12rem;
+  grid-row-gap: 3.62rem;
   margin-top: 4.56rem;
   margin-bottom: 8.75rem;
 }
