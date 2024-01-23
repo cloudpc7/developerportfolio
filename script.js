@@ -10,7 +10,7 @@ const errorMessage = document.getElementById("error-message");
 const emailRegex = new RegExp(/^[a-zA-z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-z]{2,4}$/);
 
 projects.forEach((project) => {
-  if(project.id === "project") {
+  if(project.classList.contains("project")) {
     project.addEventListener("mouseover", () => {
       project.appendChild(viewProject);
       viewProject.classList.add("view-project");

@@ -17,6 +17,8 @@ body {
   font-family: 'Space Grotesk', sans-serif;
 }
 
+/* container div */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -28,23 +30,12 @@ body {
   position: relative;
 }
 
-.rings {
-  position: absolute;
-  top: 8.31rem;
-  left: -7.31rem;
-}
-
-.name {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 2rem;
-  letter-spacing: -0.027rem;
-  margin: 2.44rem 0 0 0;
-}
+/* header div */
 
 .hero-section {
   display: flex;
-  position: relative;
+  width: 69.38rem;
+  height: 51.5rem;
   border-bottom: 1px solid #fff;
   z-index: 3;
 }
@@ -57,6 +48,8 @@ body {
 
 .bio {
   margin-top: 7.92rem;
+  width: 44.12rem;
+  height: 18.93rem;
 }
 
 .introduction {
@@ -72,16 +65,32 @@ body {
 }
 
 .description {
+  margin-top: 2.19rem;
+  margin-bottom: 0;
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.75rem;
+}
+
+.rings {
+  position: absolute;
+  top: 8.31rem;
+  left: -6.25rem;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: -0.027rem;
+  margin: 2.44rem 0 0 0;
 }
 
 .contact-link {
   font-weight: 700;
   line-height: 1.62rem;
   letter-spacing: 0.14rem;
-  margin-top: 2.88rem;
+  margin-top: 4.12rem;
   margin-bottom: 0;
 }
 
@@ -101,7 +110,7 @@ body {
   position: relative;
   right: 2.32rem;
   z-index: 1;
-  margin-bottom: 4.06rem;
+  margin-bottom: 6.5rem;
 }
 
 .social-media-icons {
@@ -117,6 +126,8 @@ body {
   width: 27.81rem;
   height: 45rem;
 }
+
+/* Skills container */
 
 .skill-sets {
   display: grid;
@@ -144,9 +155,14 @@ body {
 
 .rings-two {
   position: absolute;
-  top: 69.31rem;
+  width: 33.125rem;
+  height: 5rem;
+  top: 67.31rem;
   right: -14.92rem;
 }
+
+
+/* projects container */
 
 .projects {
   display: grid;
@@ -222,6 +238,8 @@ body {
   margin: 0;
 }
 
+/* footer container */
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -243,17 +261,15 @@ body {
 
 .contact {
   display: flex;
-  justify-content: space-between;
-  margin-top: 5.45rem;
+  gap: 13.75rem;
   height: 31.44rem;
 }
 
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 2.75rem;
-  width: 27.81rem;
-  height: 13rem;
+  gap: 2.25rem;
+  margin-top: 5.25rem;
 }
 
 .contact-title {
@@ -261,7 +277,7 @@ body {
   font-size: 5.5rem;
   font-weight: 700;
   line-height: 5.5rem;
-  line-spacing: -0.156rem;
+  letter-spacing: -0.156rem;
 }
 
 .contact-feedback {
@@ -271,31 +287,46 @@ body {
   line-height: 1.75rem;
 }
 
+/* feedback form container */
+
 .feedback-form {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 10.12rem;
+  display: block;
+  width: 27.81rem;
+  margin-top: 5.25rem;
 }
 
 .feedback-input {
-  width: 27.81rem;
-  height: 2.62rem;
   background-color: #242424;
+  width: 27.8rem;
+  height: 2.68rem;
   color: #fff;
   border: none;
   border-bottom: .06px solid #fff;
-  padding-left: 1.5rem;
-  flex: 1;
+  margin-bottom: 2rem;
+  position: relative;
 }
 
 .feedback-input:focus {
   background-color: #242424;
 }
 
+::placeholder {
+  padding-left: 1.5rem;
+  position: absolute;
+  top: 0;
+}
+
 .user-name.active {
   border-bottom: .06px solid #4EE1A0;
+}
+
+.feedback-message {
+  height: 6.68rem;
+}
+
+.email-input {
+  margin: 0;
+  display: block;
 }
 
 #email.active {
@@ -306,25 +337,17 @@ body {
 }
 
 .error-message {
+  width: 27.81rem;
+  height: 1rem;
+  text-align: right;
   color: #FF6F58;
-  margin-left: auto;
-  font-size: 0.75rem;
-  font-weight: 500;
-  line-height: 1rem;
-  letter-spacing: -0.01rem;
-  padding-top: 0.31rem;
+  margin-top: 0.06;
 }
 
 .feedback-input:focus {
   outline: none;
 }
 
-::placeholder {
-  padding-left: 1.5rem;
-  font-weight: 500;
-  line-height: 1.625rem;
-  letter-spacing: -0.013rem;
-}
 
 .send {
   border: none;
@@ -334,7 +357,7 @@ body {
   line-height: 1.62rem;
   letter-spacing: 0.14rem;
   margin-left: auto;
-  
+  display: block;
 }
 
 .send u {
