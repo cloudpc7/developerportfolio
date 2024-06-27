@@ -7,67 +7,58 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
 <body>
   <header>
-    <img class="rings" src="./assets/images/pattern-rings.svg">
-    <navbar>
-      <p>adamkeyes</p>
-      <div class="social-media-icons">
-        <a><img src="./assets/images/icon-github.svg"></a>
-        <a><img src="./assets/images/icon-frontend-mentor.svg"></a>
-        <a><img src="./assets/images/icon-linkedin.svg"></a>
-        <a><img src="./assets/images/icon-twitter.svg"></a>
-      </div>
-    </navbar>
-    <picture>
-      <source media="(min-width: 69rem)" srcset="./assets/images/image-profile-desktop.webp">
-      <source media="(min-width: 48rem)" srcset="./assets/images/image-profile-tablet.webp">
-      <img src="./assets/images/image-profile-mobile.webp">
-    </picture>
-    <img src="./assets/images/pattern-circle.svg">
+    <p class="developer">adamkeyes</p>
+    <div class="social-media-icons">
+      <a><img src="./assets/images/icon-github.svg" alt="github"></a>
+      <a><img src="./assets/images/icon-frontend-mentor.svg" alt="front-end mentor"></a>
+      <a><img src="./assets/images/icon-linkedin.svg" alt="linkedin"></a>
+      <a><img src="./assets/images/icon-twitter.svg" alt="twitter"></a>
+    </div>
   </header>
   <main>
-    <section class="greeting">
-      <h1>Nice to meet you! I'm Adam Keyes.</h1>
-      <p>
-        Based in the UK, I'm a front-end developer passionate about 
-        building accessible web apps that users love.
-      </p>
-      <a>Contact me</a>
-    </section>
-    <section class="experience">
-      <div>
-        <h2>HTML</h2>
-        <p>4 Years Experience</p>
+    <section class="hero">
+      <picture class="developer-portrait">
+        <source media="min-width:70rem" srcset="./assets/images/image-profile-desktop.webp"/>
+        <source media="min-width: 48rem" srcset="./assets/images/image-profile-tablet.webp"/>
+        <img src="./assets/images/image-profile-mobile.webp" alt="adam keys"/>
+      </picture>
+      <div class="greeting">
+        <h1 class="developer-name">Nice to meet you! I'm <a href="#">Adam Keyes</a>.</h1>
+        <p class="developer-about">
+          Based in the UK, I'm a front-end developer passionate about 
+          building accessible web apps that users love.
+        </p>
+        <a href="#" class="contact" >Contact me</a>
       </div>
-      <div>
-        <h2>CSS</h2>
-        <p>4 Years Experience</p>
-      </div>
-      <div>
-        <h2>JavaScript</h2>
-        <p>4 Years Experience</p>
-      </div>
-      <div>
-        <h2>Accessibility</h2>
-        <p>4 Years Experience</p>
-      </div>
-      <div>
-        <h2>React</h2>
-        <p> 3 Years Experience</p>
-      </div>
-      <div>
-        <h2>Sass</h2>
-        <p>3 Years Experience</p>
-      </div>
-      <img src="./assets/images/pattern-rings.svg">
-    </section>
+      </section>
+    <ul class="experience">
+        <li>HTML</li>
+        <span>4 Years Experience</span>
+
+        <li>CSS</li>
+        <span>4 Years Experience</span>
+
+        <li>JavaScript</li>
+        <span>4 Years Experience</span>
+
+        <li>Accessibility</li>
+        <span>4 Years Experience</span>
+
+        <li>React</li>
+        <span> 3 Years Experience</span>
+
+        <li>Sass</li>
+        <span>3 Years Experience</span>
+    </ul>
     <section class="project-section">
       <div class="project-title">
         <h1>Projects</h1>
-        <a href="#">Contact me</a>
+        <a href="#" class="contact">Contact me</a>
       </div>
       <div class="project-container">
         <picture class="project">
@@ -77,12 +68,12 @@
         </picture>
         <h3 project-name>Design portfolio</h3>
         <div class="project-language">
-          <p> HTML</p>
+          <p>HTML</p>
           <p>CSS</p>
         </div>
         <div class="project-view">
-          <a href="#">VIEW PROJECT</a>
-          <a href="#">VIEW CODE</a>
+          <a href="#" class="project-link">VIEW PROJECT</a>
+          <a href="#" class="project-link">VIEW CODE</a>
         </div>
       </div>
       <div class="project-container">
@@ -97,8 +88,8 @@
           <p>CSS</p>
         </div>
         <div class="project-view">
-          <a href="#">VIEW PROJECT</a>
-          <a href="#">VIEW CODE</a>
+          <a href="#" class="project-link">VIEW PROJECT</a>
+          <a href="#"class="project-link">VIEW CODE</a>
         </div>
       </div>
       <div class="project-container">
@@ -114,8 +105,8 @@
           <p>JavaScript</p>
         </div>
         <div class="project-view">
-          <a href="#">VIEW PROJECT</a>
-          <a href="#">VIEW CODE</a>
+          <a href="#" class="project-link">VIEW PROJECT</a>
+          <a href="#" class="project-link">VIEW CODE</a>
         </div>
       </div>
       <div class="project-container">
@@ -131,8 +122,8 @@
           <p>JavaScript</p>
         </div>
         <div class="project-view">
-          <a href="#">VIEW PROJECT</a>
-          <a href="#">VIEW CODE</a>
+          <a href="#" class="project-link">VIEW PROJECT</a>
+          <a href="#" class="project-link">VIEW CODE</a>
         </div>
       </div>
       <div class="project-container">
@@ -148,11 +139,11 @@
           <p>JavaScript</p>
         </div>
         <div class="project-view">
-          <a href="#">VIEW PROJECT</a>
-          <a href="#">VIEW CODE</a>
+          <a href="#" class="project-link">VIEW PROJECT</a>
+          <a href="#" class="project-link">VIEW CODE</a>
         </div>
       </div>
-      <div class="project-container">
+      <div class="project-container last">
         <picture class="project">
           <source media="(min-width:70rem)" srcset="./assets/images/thumbnail-project-1-large.webp">
           <source media="(min-width:48rem)" srcset="./assets/images/thumbnail-project-1-large.webp">
@@ -165,39 +156,36 @@
           <p>JavaScript</p>
         </div>
         <div class="project-view">
-          <a href="#">VIEW PROJECT</a>
-          <a href="#">VIEW CODE</a>
+          <a href="#" class="project-link">VIEW PROJECT</a>
+          <a href="#" class="project-link">VIEW CODE</a>
         </div>
       </div>
     </section>
     <section class="contact-form-container">
-      <h1>CONTACT</h1>
-      <p class="feedback">
-        I would love to hear about your project and how I could help. Please 
-        fill in the form, and I’ll get back to you as soon as possible.
-      </p>
-      <form class="contact-form">
-        <label for="name">Name</label>
-        <input class="name" id="name" type="text" name="name" placeholder="name">
-        <label for="email" class="email">Email</label>
-        <input class="email" id="email" type="email" name="email" placeholder="email">
-        <label for="message">Message</label>
-        <textarea type="text" id="message" name="message" placeholder="message">
-        <button type="submit">Send message</button>
-      </form>
-      <img class="rings" src="./assets/images/pattern-rings.svg">
+        <h1 class="form-title">CONTACT</h1>
+        <p class="feedback">
+          I would love to hear about your project and how I could help. Please 
+          fill in the form, and I’ll get back to you as soon as possible.
+        </p>
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input class="name" id="name" type="text" name="name">
+          <label for="email" class="email">Email</label>
+          <input class="email" id="email" type="email" name="email">
+          <label for="message">Message</label>
+          <textarea type="text" id="message" name="message"></textarea>
+          <button class="btn" type="submit">Send message</button>
+        </form>
     </section>
   </main>
   <footer>
-    <navbar>
-      <p>adamkeyes</p>
+      <p class=".developer">adamkeyes</p>
       <div class="social-media-icons">
         <a><img src="./assets/images/icon-github.svg"></a>
         <a><img src="./assets/images/icon-frontend-mentor.svg"></a>
         <a><img src="./assets/images/icon-linkedin.svg"></a>
         <a><img src="./assets/images/icon-twitter.svg"></a>
       </div>
-    </navbar>
   </footer>
 </body>
 </html>
